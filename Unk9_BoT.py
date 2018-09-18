@@ -72,12 +72,6 @@ def linker_location(bot, update):
                      location=update.message.location)
 
 
-def clear_data(bot, update, job_queue):
-    bot.send_message(chat_id=update.message.chat_id, text='ClearData a timer for 5 minute!')
-    bot.get_updates()
-    bot.delete_message(chat_id=update.effective_message.chat_id, message_id=update.effective_message.message_id)
-
-
 linker_contact_handler = MessageHandler(Filters.contact, linker_contact)
 dispatcher.add_handler(linker_contact_handler)
 
