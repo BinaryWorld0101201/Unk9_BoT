@@ -5,7 +5,7 @@ Authentication BOT for entering private channels of Unk9vvN team for telegram wi
 
 ![alt text][logo]
 
-[logo]: https://github.com/unk9vvn/Kalissistant/raw/master/icon.png "Logo Title Text 2"
+[logo]: https://raw.githubusercontent.com/unk9vvn/Unk9_BoT/master/icon.jpg "Logo Title Text 2"
 
 
 
