@@ -2,8 +2,6 @@
 # -*- coding: UTF-8 -*-
 # https://t.me/unk9vvn
 # AVI
-from _cffi_backend import callback
-
 from telegram.ext import *
 import telegram
 import logging
