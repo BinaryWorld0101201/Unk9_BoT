@@ -22,8 +22,7 @@ def start(bot, update):
 def contact(bot, update):
     contact_keyboard = telegram.KeyboardButton(text="ارسال شماره اکانت", request_contact=True)
     admin_keyboard = telegram.KeyboardButton(text="ارتباط با ادمین بات")
-    custom_keyboard = [[contact_keyboard],
-                       [admin_keyboard]]
+    custom_keyboard = [[contact_keyboard]]
     reply_markup = telegram.ReplyKeyboardMarkup(custom_keyboard)
     bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
     bot.send_message(chat_id=update.message.chat_id,
@@ -35,8 +34,7 @@ def contact(bot, update):
 def location(bot, update):
     location_keyboard = telegram.KeyboardButton(text="ارسال موقعیت مکانی", request_location=True)
     admin_keyboard = telegram.KeyboardButton(text="ارتباط با ادمین بات")
-    custom_keyboard = [[location_keyboard],
-                       [admin_keyboard]]
+    custom_keyboard = [[location_keyboard]]
     reply_markup = telegram.ReplyKeyboardMarkup(custom_keyboard)
     bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
     bot.send_message(chat_id=update.message.chat_id,
