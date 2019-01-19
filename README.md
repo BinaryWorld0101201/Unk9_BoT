@@ -16,9 +16,8 @@ Authentication for private channels that received location and contact number, w
 
 # How to Run
 ```
-# git clone https://github.com/unk9vvn/Unk9_BoT.git
-# cd Unk9_BoT && chmod 755 *
-# pip install telegram
-# pip install python-telegram-bot
-# python Unk9_BoT.py
+git clone https://github.com/unk9vvn/Unk9_BoT.git
+cd Unk9_BoT && chmod 755 *
+pip install telegram python-telegram-bot
+python Unk9_BoT.py
 ```
