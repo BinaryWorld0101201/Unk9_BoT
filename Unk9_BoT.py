@@ -2,9 +2,9 @@
 # coding=utf-8
 # https://t.me/unk9vvn
 # AVI
+import telegram, logging
 from telegram.ext import *
-import telegram
-import logging
+
 
 updater = Updater('Your Token')
 dispatcher = updater.dispatcher
