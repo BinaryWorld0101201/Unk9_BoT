@@ -79,6 +79,7 @@ https://discordapp.com/download
                      disable_notification=True,
                      location=update.message.location)
 
+
 linker_contact_handler = MessageHandler(Filters.contact, linker_contact)
 dispatcher.add_handler(linker_contact_handler)
 
