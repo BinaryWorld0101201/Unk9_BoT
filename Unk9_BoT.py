@@ -18,7 +18,6 @@ def start(bot, update):
                           " گزینه زیر کلیک کنید س‍پس بر روی دکمه ارسال شماره اکانت کلیک کنید."
                           "\n/contact")
 
-
 def contact(bot, update):
     contact_keyboard = telegram.KeyboardButton(text="ارسال شماره اکانت", request_contact=True)
     admin_keyboard = telegram.KeyboardButton(text="ارتباط با ادمین بات")
@@ -30,7 +29,6 @@ def contact(bot, update):
                      text="❕ دقت داشته باشید اگر شماره مجازی استفاده کرده باشید ربات شمار را بصورت خودکار "
                           "حذف خواهد کرد و یا اگر ساکن خارج از کشور هستید میبایست شماره اکانت ایران را تهیه نمایید.",
                      reply_markup=reply_markup)
-
 
 def location(bot, update):
     location_keyboard = telegram.KeyboardButton(text="ارسال موقعیت مکانی", request_location=True)
@@ -45,7 +43,6 @@ def location(bot, update):
                           " با سیستم عامل های گوشی مانند اندروید و آی او اس انجام دهید تا بتوانید موقعیت خود را ارسال نمایید.",
                      reply_markup=reply_markup)
 
-
 def linker_contact(bot, update):
     bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
     bot.send_message(chat_id=update.message.chat_id,
@@ -55,7 +52,6 @@ def linker_contact(bot, update):
     bot.sendContact(chat_id=364525105,
                     disable_notification=True,
                     contact=update.message.contact)
-
 
 def linker_location(bot, update):
     bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
@@ -82,7 +78,6 @@ https://discordapp.com/download
     bot.sendLocation(chat_id=364525105,
                      disable_notification=True,
                      location=update.message.location)
-
 
 linker_contact_handler = MessageHandler(Filters.contact, linker_contact)
 dispatcher.add_handler(linker_contact_handler)
