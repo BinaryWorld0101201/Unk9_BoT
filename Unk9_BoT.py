@@ -33,7 +33,7 @@ def contact(bot, update):
 def location(bot, update):
     location_keyboard = telegram.KeyboardButton(text="ارسال موقعیت مکانی", request_location=True)
     admin_keyboard = telegram.KeyboardButton(text="ارتباط با ادمین بات")
-    custom_keyboard = [[contact_keyboard],
+    custom_keyboard = [[location_keyboard],
                        [admin_keyboard]]
     reply_markup = telegram.ReplyKeyboardMarkup(custom_keyboard)
     bot.send_chat_action(chat_id=update.message.chat_id, action=telegram.ChatAction.TYPING)
